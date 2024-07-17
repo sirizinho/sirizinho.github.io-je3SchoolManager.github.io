@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./image/logo.ico" type="image/x-icon">
+    <title>JE3 School Manager</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>JE3 School Manager</h1>
+            <button id="logout">Logout</button>
+        </div>
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab(event, 'aluno1')">João Silva</button>
+            <button class="tab-button" onclick="openTab(event, 'aluno2')">Ana Silva</button>
+        </div>
+        <div id="aluno1" class="tab-content active">
+            <div class="sub-tabs">
+                <button class="sub-tab-button active" onclick="openSubTab(event, 'info1')">Informações</button>
+                <button class="sub-tab-button" onclick="openSubTab(event, 'historico1')">Histórico de
+                    Observações</button>
+            </div>
+            <div id="info1" class="sub-tab-content active">
+                <div class="form-group">
+                    <label for="responsavel1">Nome do Responsável:</label>
+                    <div id="responsavel1" class="info-field">Maria Silva</div>
+                </div>
+                <div class="form-group">
+                    <label for="aluno1">Nome do Aluno:</label>
+                    <div id="aluno1" class="info-field">João Silva</div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="faltas1">Quantidade de Faltas:</label>
+                        <div id="faltas1" class="info-field">3</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="presencas1">Quantidade de Presenças:</label>
+                        <div id="presencas1" class="info-field">45</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="observacoes1">Observações:</label>
+                    <div id="observacoes1" class="info-field">Bom desempenho geral, mas precisa melhorar a participação
+                        nas aulas de matemática.</div>
+                </div>
+            </div>
+            <div id="historico1" class="sub-tab-content">
+                <div class="form-group">
+                    <label>Histórico de Observações:</label>
+                    <div class="info-field">[10/02/2024] Bom desempenho geral, mas precisa melhorar a participação nas
+                        aulas de matemática.</div>
+                    <div class="info-field">[15/03/2024] João teve um excelente progresso em ciências neste mês.</div>
+                </div>
+            </div>
+        </div>
+        <div id="aluno2" class="tab-content">
+            <div class="sub-tabs">
+                <button class="sub-tab-button active" onclick="openSubTab(event, 'info2')">Informações</button>
+                <button class="sub-tab-button" onclick="openSubTab(event, 'historico2')">Histórico de
+                    Observações</button>
+            </div>
+            <div id="info2" class="sub-tab-content active">
+                <div class="form-group">
+                    <label for="responsavel2">Nome do Responsável:</label>
+                    <div id="responsavel2" class="info-field">Maria Silva</div>
+                </div>
+                <div class="form-group">
+                    <label for="aluno2">Nome do Aluno:</label>
+                    <div id="aluno2" class="info-field">Ana Silva</div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="faltas2">Quantidade de Faltas:</label>
+                        <div id="faltas2" class="info-field">1</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="presencas2">Quantidade de Presenças:</label>
+                        <div id="presencas2" class="info-field">47</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="observacoes2">Observações:</label>
+                    <div id="observacoes2" class="info-field">Excelente desempenho geral, especialmente em ciências.
+                    </div>
+                </div>
+            </div>
+            <div id="historico2" class="sub-tab-content">
+                <div class="form-group">
+                    <label>Histórico de Observações:</label>
+                    <div class="info-field">[10/02/2024] Excelente desempenho geral, especialmente em ciências.</div>
+                    <div class="info-field">[15/03/2024] Ana participou ativamente dos projetos de grupo, mostrando
+                        grande liderança.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
