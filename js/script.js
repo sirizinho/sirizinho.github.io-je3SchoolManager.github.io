@@ -44,3 +44,8 @@ function openSubTab(event, subTabId) {
     document.getElementById(subTabId).classList.add("active");
     event.currentTarget.classList.add("active");
 }
+
+function logout(){
+    window.open('./main.html');
+    window.close();
+}
